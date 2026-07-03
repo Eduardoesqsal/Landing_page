@@ -40,7 +40,6 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
           path: ./dist
 
   deploy:
@@ -51,12 +50,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/download-pages-artifact@v3
-        with:
-          name: github-pages
-          path: ./dist
-
-      - uses: actions/configure-pages@v5
-
       - id: deployment
         uses: actions/deploy-pages@v4
