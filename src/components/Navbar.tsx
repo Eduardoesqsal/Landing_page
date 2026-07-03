@@ -59,18 +59,18 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center h-16 sm:h-18">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-18">
         <a
           href="#hero"
           onClick={(e) => { e.preventDefault(); handleClick("#hero") }}
-          className="flex items-center gap-2 text-xl sm:text-2xl font-bold font-display"
+          className="flex items-center gap-2 text-xl sm:text-2xl font-bold font-display shrink-0"
         >
           <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
           <span className="text-gradient">Nails</span>
           <span className="text-dark">Saris</span>
         </a>
 
-        <div className="hidden lg:flex items-center gap-8 ml-auto">
+        <div className="hidden lg:flex items-center gap-8">
           {links.map((link) => (
             <a
               key={link.href}
@@ -102,7 +102,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden flex items-center justify-center ml-auto w-10 h-10 text-gray-700 hover:text-primary transition-colors"
+          className="lg:hidden flex items-center justify-center w-10 h-10 text-gray-700 hover:text-primary transition-colors"
           aria-label="Toggle menu"
         >
           {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
