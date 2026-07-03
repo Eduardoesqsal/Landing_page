@@ -13,7 +13,7 @@ interface FooterLink {
 }
 
 const socialLinks: SocialLink[] = [
-  { icon: Camera, href: "#", label: "Instagram" },
+  { icon: Camera, href: "https://www.instagram.com/nails_by_sariis", label: "Instagram" },
   { icon: MessageCircle, href: "#", label: "Facebook" },
   { icon: Music2, href: "#", label: "TikTok" },
   { icon: Hash, href: "#", label: "Twitter" },

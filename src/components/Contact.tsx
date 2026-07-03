@@ -48,8 +48,8 @@ export default function Contact() {
     {
       icon: Camera,
       label: "Instagram",
-      value: "@nailssaris",
-      href: "https://instagram.com/nailssaris",
+      value: "@nails_by_sariis",
+      href: "https://www.instagram.com/nails_by_sariis",
       color: "text-fuchsia-500",
       bg: "bg-fuchsia-50",
     },
