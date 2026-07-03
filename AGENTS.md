@@ -107,10 +107,5 @@ git remote add origin https://github.com/Eduardoesqsal/Landing_page.git
 git branch -M main
 git push -u origin main
 ```
-
-## Notas
-
-- La versión de pnpm se fija en `package.json` con el campo `packageManager` (actualmente `pnpm@10.34.4`). El workflow `pnpm/action-setup@v4` lo detecta automáticamente.
-- `actions/download-pages-artifact` **no existe** (404). El deploy job usa solo `actions/deploy-pages@v4`, que maneja la descarga del artifact internamente.
-- `actions/upload-pages-artifact@v3` sube el build a un artifact que `deploy-pages` consume automáticamente.
-- El deploy a GitHub Pages falla con 404 si Pages no está activado. Solución: ir a Settings > Pages del repo, seleccionar Source: **GitHub Actions** y guardar.
+## enlace 
+https://superb-starburst-43c0b7.netlify.app/
