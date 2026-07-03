@@ -92,13 +92,13 @@ El workflow `.github/workflows/ci.yml` ejecuta en cada `push` y `pull_request` a
 | Build | `pnpm build` |
 | Deploy | GitHub Pages (solo en push a `main`) |
 
-### GitHub Pages
+### Netlify
 
-El build se despliega automáticamente a GitHub Pages. El `base` en `vite.config.ts` está configurado como `/Landing_page/` para que coincida con el nombre del repo.
+El build se despliega automáticamente en Netlify al conectar el repo. `netlify.toml` define:
+- Build command: `pnpm build`
+- Publish directory: `dist`
 
-Requisitos para activar Pages:
-1. Ir a Settings > Pages del repo
-2. Source: **GitHub Actions**
+Netlify detecta `pnpm` automáticamente por el campo `packageManager` en `package.json`.
 
 ## Repositorio
 
