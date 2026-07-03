@@ -102,7 +102,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden flex items-center justify-center mr-2 w-10 h-10 text-gray-700 hover:text-primary transition-colors"
+          className="lg:hidden flex items-center justify-center w-10 h-10 text-gray-700 hover:text-primary transition-colors"
           aria-label="Toggle menu"
         >
           {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -114,7 +114,7 @@ export default function Navbar() {
           menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-          <div className="bg-white/95 backdrop-blur-lg border-b border-rose-100 px-4 sm:px-6 py-4 flex flex-col gap-3">
+          <div className="bg-white/95 backdrop-blur-lg border-b border-rose-100 px-5 sm:px-6 py-4 flex flex-col gap-3">
           {links.map((link) => (
             <a
               key={link.href}
@@ -132,7 +132,7 @@ export default function Navbar() {
           <a
             href="#contacto"
             onClick={(e) => { e.preventDefault(); handleClick("#contacto") }}
-            className="flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-secondary text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all hover:shadow-lg hover:shadow-rose-500/25"
+            className="flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-secondary text-white w-full px-6 py-2.5 rounded-full text-sm font-semibold transition-all hover:shadow-lg hover:shadow-rose-500/25"
           >
             <Calendar className="w-4 h-4" />
             Agendar Cita
