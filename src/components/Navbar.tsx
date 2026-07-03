@@ -59,7 +59,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-18">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center h-16 sm:h-18">
         <a
           href="#hero"
           onClick={(e) => { e.preventDefault(); handleClick("#hero") }}
@@ -70,7 +70,7 @@ export default function Navbar() {
           <span className="text-dark">Saris</span>
         </a>
 
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8 ml-auto">
           {links.map((link) => (
             <a
               key={link.href}
@@ -102,7 +102,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden flex items-center p-2 text-gray-700 hover:text-primary transition-colors"
+          className="lg:hidden flex items-center justify-center ml-auto w-10 h-10 text-gray-700 hover:text-primary transition-colors"
           aria-label="Toggle menu"
         >
           {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -114,7 +114,7 @@ export default function Navbar() {
           menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-          <div className="bg-white/95 backdrop-blur-lg border-b border-rose-100 px-5 sm:px-6 py-4 flex flex-col gap-3">
+          <div className="bg-white/95 backdrop-blur-lg border-b border-rose-100 px-4 sm:px-6 py-4 flex flex-col gap-3">
           {links.map((link) => (
             <a
               key={link.href}
