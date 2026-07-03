@@ -63,9 +63,9 @@ export default function Navbar() {
         <a
           href="#hero"
           onClick={(e) => { e.preventDefault(); handleClick("#hero") }}
-          className="flex items-center gap-2 text-xl sm:text-2xl font-bold font-display shrink-0"
+          className="flex items-center gap-1.5 sm:gap-2 text-lg sm:text-2xl font-bold font-display shrink-0"
         >
-          <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+          <Sparkles className="w-4 h-5 sm:w-6 sm:h-6 text-primary" />
           <span className="text-gradient">Nails</span>
           <span className="text-dark">Saris</span>
         </a>
@@ -102,7 +102,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden flex items-center justify-center w-10 h-10 text-gray-700 hover:text-primary transition-colors"
+          className="lg:hidden flex items-center justify-center mr-2 w-10 h-10 text-gray-700 hover:text-primary transition-colors"
           aria-label="Toggle menu"
         >
           {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
